@@ -1,14 +1,16 @@
 import type {NextPage} from "next";
 import Image from "next/image";
 
-import logo from "../public/logo.svg";
+import header from "../public/header.svg";
 
 const Home: NextPage = () => {
   return (
-    <div className="h-full flex bg-black">
-      <header className="m-auto text-white text-center">
-        <Image alt="Basement" src={logo} />
-        <h4>Lets get this party started</h4>
+    <div className="h-full flex bg-black m-8">
+      <header className=" text-white text-center">
+        <div className="border-white">
+          <p>basement.</p>
+        </div>
+        <Image alt="Basement" src={header} />
       </header>
     </div>
   );
